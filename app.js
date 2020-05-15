@@ -111,4 +111,5 @@ app.delete('/destination/:id', function (req, res) {
 
 // Home Page 
 app.get('/', (req, res) => res.send('Welcome! You are all set to go!'))
+const port = process.env.PORT || 3000
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
